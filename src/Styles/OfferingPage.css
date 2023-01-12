@@ -1,0 +1,69 @@
+
+
+.offer-head h1 {
+  text-align: center;
+  font-family: "Roboto";
+  color: #312b2b;
+  text-transform: capitalize;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+  justify-items: center;
+}
+
+.cards div {
+  width: 350px;
+  max-height: 300px;
+  background: #e2dfdf;
+  box-shadow: 0px 2px 0px rgba(161, 153, 153, 0.25);
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+.cards div p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 159.52%;
+  color: #312b2b;
+  font-family: "Roboto";
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
+}
+.cards div h5 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #312b2b;
+  font-family: "Roboto";
+  text-align: center;
+  margin: 0%;
+  text-transform: capitalize;
+  
+}
+.cards div img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+
+/*responsive design code*/
+@media only screen and (max-width: 800px) {
+ 
+  .cards div {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .offer-head h1 {
+    text-align: center;
+    font-family: "Roboto";
+    color: #312b2b;
+    text-transform: capitalize;
+    font-size: large;
+  }
+}
