@@ -5,6 +5,9 @@
   font-family: "Roboto";
   color: #312b2b;
   text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .cards {

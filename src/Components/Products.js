@@ -8,7 +8,7 @@ export default function Products() {
   const ratingStar = (
     <svg
       aria-hidden="true"
-      class="w-5 h-5 text-yellow-400"
+      className="w-5 h-5 text-yellow-400"
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +21,6 @@ export default function Products() {
   return (
     <div>
       <div className="product-intro">
-        <h1>Explore our products</h1>
-        <p>Everyhing you need, any type of plant</p>
         <div className="Products">
           <div>
             <img src={Tree1} alt="tree1" />
@@ -34,7 +32,7 @@ export default function Products() {
               {ratingStar}
               {ratingStar}
             </span>
-            <span>$510</span> <s id="discount">800$</s>{" "}
+            <span>$510</span> <strike id="discount">800$</strike>{" "}
             <button id="view">view</button>
           </div>
           <div>
@@ -46,7 +44,7 @@ export default function Products() {
               {ratingStar}
               {ratingStar}
             </span>
-            <span>$110</span> <s id="discount">400$</s>{" "}
+            <span>$110</span> <strike id="discount">400$</strike>{" "}
             <button id="view">view</button>
           </div>
           <div>
@@ -59,163 +57,10 @@ export default function Products() {
               {ratingStar}
               {ratingStar}
             </span>
-            <span>$6000</span> <s id="discount">8000$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree1} alt="tree1" />
-            <h5>Monstera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$510</span> <s id="discount">800$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree2} alt="tree1" />
-            <h5>Mengifera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$110</span> <s id="discount">400$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree3} alt="tree1" />
-            <h5>Bonoshai vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$6000</span> <s id="discount">8000$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree1} alt="tree1" />
-            <h5>Monstera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$510</span> <s id="discount">800$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree2} alt="tree1" />
-            <h5>Mengifera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$110</span> <s id="discount">400$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree3} alt="tree1" />
-            <h5>Bonoshai vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$6000</span> <s id="discount">8000$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree1} alt="tree1" />
-            <h5>Monstera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$510</span> <s id="discount">800$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree2} alt="tree1" />
-            <h5>Mengifera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$110</span> <s id="discount">400$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree3} alt="tree1" />
-            <h5>Bonoshai vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$6000</span> <s id="discount">8000$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree1} alt="tree1" />
-            <h5>Monstera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$510</span> <s id="discount">800$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree2} alt="tree1" />
-            <h5>Mengifera vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$110</span> <s id="discount">400$</s>{" "}
-            <button id="view">view</button>
-          </div>
-          <div>
-            <img src={Tree3} alt="tree1" />
-            <h5>Bonoshai vl</h5>
-            <span className="rate">
-              {" "}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-              {ratingStar}
-            </span>
-            <span>$6000</span> <s id="discount">8000$</s>{" "}
+            <span>$6000</span> <strike id="discount">8000$</strike>{" "}
             <button id="view">view</button>
           </div>
         </div>
-        
       </div>
     </div>
   );
