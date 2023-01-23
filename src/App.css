@@ -1,0 +1,12 @@
+button{
+  background-color: rgb(67, 67, 241);
+  color: aliceblue;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  margin-top: 350px;
+  padding: 10px;
+}
