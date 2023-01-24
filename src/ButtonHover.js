@@ -9,7 +9,7 @@ export default function ButtonHover() {
     if (isClicked) {
       setTimeout(() => {
         setShowAnimation(true);
-      }, 3000);
+      }, 30000);
     }
   }, [isClicked]);
 
