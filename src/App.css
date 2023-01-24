@@ -1,3 +1,6 @@
+.app{
+  margin-top: 200px;
+}
 button{
   background-color: rgb(67, 67, 241);
   color: aliceblue;
@@ -7,6 +10,53 @@ button{
   border-radius: 5px;
   margin: auto;
   display: block;
-  margin-top: 350px;
+  margin-top: 150px;
   padding: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: pointer;
+}
+p{
+  text-align: center;
+  font-weight: 700;
+  color: rgb(62, 62, 243);
+  transition: 2s;
+}
+button:hover{
+  background-color: rgb(231, 231, 238);
+  border: 2px solid gray;
+  color: black;
+  transition: 15ms;
+}
+.logo{
+  margin-top: 100px;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+.logoAnimation {
+  margin-top: 100px;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

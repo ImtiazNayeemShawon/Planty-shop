@@ -3,5 +3,9 @@ import "../src/App.css";
 import ButtonHover from "./ButtonHover";
 
 export default function App() {
-  return <ButtonHover />;
+  return (
+    <div className="app">
+      <ButtonHover />;
+    </div>
+  );
 }

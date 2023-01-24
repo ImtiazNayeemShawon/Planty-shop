@@ -1,36 +1,37 @@
 import React, { useState, useEffect } from "react";
+import Logo from "./logo.svg";
 
 export default function ButtonHover() {
-  //create a  function for calling after finish 10 second
-  function after10SecondCall() {
-    alert("I am here because someone call me by hover this button");
-  }
+  const [isClicked, setIsClicked] = useState(false);
+  const [showAnimation, setShowAnimation] = useState(false);
 
-  //call a useState hook
-  const [hover, setHover] = useState(false);
-
-  //call a useEffect Hook
   useEffect(() => {
-    if (hover) {
-      //setTimeout for react after 10 second
-      const timeout = setTimeout(() => {
-        after10SecondCall();
-      }, 10000);
-
-      //clearTimeout to cancel sheduled setTimeout
-      return () => clearTimeout(timeout);
+    if (isClicked) {
+      setTimeout(() => {
+        setShowAnimation(true);
+      }, 3000);
     }
-    //give hover in Array
-  }, [hover]);
+  }, [isClicked]);
 
-  //return a button which have 2 event onMouseEnter for start count time and onMouseLeave for stop count when mouse is not hovered
   return (
     <div>
+      <div>
+        {showAnimation ? (
+          <div>
+            <img className="logoAnimation" src={Logo} />
+          </div>
+        ) : (
+          <div>
+            <img className="logo" src={Logo} />
+          </div>
+        )}
+      </div>
+
       <button
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
+        onClick={() => setIsClicked(true)}
+        onMouseLeave={() => setIsClicked(false)}
       >
-        Hover me
+        {showAnimation ? <div>Look I can spin !</div> : <div>Spin me !</div>}
       </button>
     </div>
   );
